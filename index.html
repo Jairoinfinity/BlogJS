@@ -5,11 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+    <script src="js/main.js"></script>
+
+
     <title>Blog en JavaScript</title>
     <link rel="stylesheet" href="css/style.css">
+    <link id="theme" rel="stylesheet" href="css/green.css">
 </head>
 
 <body>
+    <!--Cambiar theme-->
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
     <section id="global">
         <!--Cabecera-->
         <header>
@@ -31,29 +47,17 @@
 
         <!--Slider-->
         <div id="slider">
-
+            <div class="bxslider">
+                <div><img src="img/hojas.jpg" title="Hojas"></div>
+                <div><img src="img/rojo.jpg" title="Rojo"></div>
+                <div><img src="img/cielo.jpg" title="Cielo"></div>
+            </div>
         </div>
 
         <!--contenido-->
         <section id="content">
             <div id="posts">
-                <article class="post">
-                    <h2>Titulo del artículo</h2>
-                    <span class="date">Fecha del artículo</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo non nibh laoreet euismod. Sed ultrices, quam ac lacinia finibus, nisl ipsum lobortis elit, vel ultrices odio eros quis arcu. Suspendisse non semper magna.
-                        Cras dapibus, sapien vel ornare gravida, dui magna cursus ex, eu tincidunt eros turpis in erat. Sed ac tortor a ante sollicitudin accumsan eu eget ligula. Suspendisse in ipsum imperdiet, rutrum sapien at, laoreet sem. Vivamus et
-                        nunc metus.</p>
-                    <a href="" class="button-more">Leer más</a>
-                </article>
 
-                <article class="post">
-                    <h2>Titulo del artículo</h2>
-                    <span class="date">Fecha del artículo</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo non nibh laoreet euismod. Sed ultrices, quam ac lacinia finibus, nisl ipsum lobortis elit, vel ultrices odio eros quis arcu. Suspendisse non semper magna.
-                        Cras dapibus, sapien vel ornare gravida, dui magna cursus ex, eu tincidunt eros turpis in erat. Sed ac tortor a ante sollicitudin accumsan eu eget ligula. Suspendisse in ipsum imperdiet, rutrum sapien at, laoreet sem. Vivamus et
-                        nunc metus.</p>
-                    <a href="" class="button-more">Leer más</a>
-                </article>
             </div>
 
             <aside id="sidebar">
@@ -63,17 +67,17 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo</p>
                 </div>
 
-                <div class="about">
+                <div class="about" id="login">
                     <h4><span>Identificate</span></h4>
                     <form>
                         <label>Nombre</label>
-                        <input type="text" name="nombre">
+                        <input type="text" name="nombre" id="form_name">
 
                         <label>Email</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" id="form_email">
 
                         <label>Contraseña</label>
-                        <input type="password" name="password">
+                        <input type="password" name="password" id="form_password">
 
                         <input type="submit" value="Entrar">
                     </form>
@@ -86,6 +90,7 @@
     <!--Pie de página-->
     <footer>
         Blog en JavaScript por Jairo Bernal &copy;
+        <a href="#" class="subir">Ir arriba</a>
     </footer>
 </body>
 
