@@ -1,51 +1,54 @@
 $(document).ready(function() {
-    //Slider
-    $('.bxslider').bxSlider({
-        mode: 'fade',
-        captions: true,
-        slideWidth: 1200
-    });
+    if (window.location.href.indexOf("index") > -1) {
+        //Slider
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: true,
+            slideWidth: 1200
+        });
 
-    //Posts
-    var post = [{
-            title: "Prueba de titulo 1",
-            date: "Publicado el día " + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo non nibh laoreet euismod. Sed ultrices, quam ac lacinia finibus, nisl ipsum lobortis elit, vel ultrices odio eros quis arcu. Suspendisse non semper magna. Cras dapibus, sapien vel ornare gravida, dui magna cursus ex, eu tincidunt eros turpis in erat. Sed ac tortor a ante sollicitudin accumsan eu eget ligula. Suspendisse in ipsum imperdiet, rutrum sapien at, laoreet sem. Vivamus et nunc metus."
-        },
-        {
-            title: "Prueba de titulo 2",
-            date: "Publicado el día " + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo non nibh laoreet euismod. Sed ultrices, quam ac lacinia finibus, nisl ipsum lobortis elit, vel ultrices odio eros quis arcu. Suspendisse non semper magna. Cras dapibus, sapien vel ornare gravida, dui magna cursus ex, eu tincidunt eros turpis in erat. Sed ac tortor a ante sollicitudin accumsan eu eget ligula. Suspendisse in ipsum imperdiet, rutrum sapien at, laoreet sem. Vivamus et nunc metus."
-        },
-        {
-            title: "Prueba de titulo 3",
-            date: "Publicado el día " + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo non nibh laoreet euismod. Sed ultrices, quam ac lacinia finibus, nisl ipsum lobortis elit, vel ultrices odio eros quis arcu. Suspendisse non semper magna. Cras dapibus, sapien vel ornare gravida, dui magna cursus ex, eu tincidunt eros turpis in erat. Sed ac tortor a ante sollicitudin accumsan eu eget ligula. Suspendisse in ipsum imperdiet, rutrum sapien at, laoreet sem. Vivamus et nunc metus."
-        },
-        {
-            title: "Prueba de titulo 4",
-            date: "Publicado el día " + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo non nibh laoreet euismod. Sed ultrices, quam ac lacinia finibus, nisl ipsum lobortis elit, vel ultrices odio eros quis arcu. Suspendisse non semper magna. Cras dapibus, sapien vel ornare gravida, dui magna cursus ex, eu tincidunt eros turpis in erat. Sed ac tortor a ante sollicitudin accumsan eu eget ligula. Suspendisse in ipsum imperdiet, rutrum sapien at, laoreet sem. Vivamus et nunc metus."
-        },
-        {
-            title: "Prueba de titulo 5",
-            date: "Publicado el día " + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo non nibh laoreet euismod. Sed ultrices, quam ac lacinia finibus, nisl ipsum lobortis elit, vel ultrices odio eros quis arcu. Suspendisse non semper magna. Cras dapibus, sapien vel ornare gravida, dui magna cursus ex, eu tincidunt eros turpis in erat. Sed ac tortor a ante sollicitudin accumsan eu eget ligula. Suspendisse in ipsum imperdiet, rutrum sapien at, laoreet sem. Vivamus et nunc metus."
-        },
-    ];
+        //Posts
+        var post = [{
+                title: "Prueba de titulo 1",
+                date: "Publicado el día " + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo non nibh laoreet euismod. Sed ultrices, quam ac lacinia finibus, nisl ipsum lobortis elit, vel ultrices odio eros quis arcu. Suspendisse non semper magna. Cras dapibus, sapien vel ornare gravida, dui magna cursus ex, eu tincidunt eros turpis in erat. Sed ac tortor a ante sollicitudin accumsan eu eget ligula. Suspendisse in ipsum imperdiet, rutrum sapien at, laoreet sem. Vivamus et nunc metus."
+            },
+            {
+                title: "Prueba de titulo 2",
+                date: "Publicado el día " + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo non nibh laoreet euismod. Sed ultrices, quam ac lacinia finibus, nisl ipsum lobortis elit, vel ultrices odio eros quis arcu. Suspendisse non semper magna. Cras dapibus, sapien vel ornare gravida, dui magna cursus ex, eu tincidunt eros turpis in erat. Sed ac tortor a ante sollicitudin accumsan eu eget ligula. Suspendisse in ipsum imperdiet, rutrum sapien at, laoreet sem. Vivamus et nunc metus."
+            },
+            {
+                title: "Prueba de titulo 3",
+                date: "Publicado el día " + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo non nibh laoreet euismod. Sed ultrices, quam ac lacinia finibus, nisl ipsum lobortis elit, vel ultrices odio eros quis arcu. Suspendisse non semper magna. Cras dapibus, sapien vel ornare gravida, dui magna cursus ex, eu tincidunt eros turpis in erat. Sed ac tortor a ante sollicitudin accumsan eu eget ligula. Suspendisse in ipsum imperdiet, rutrum sapien at, laoreet sem. Vivamus et nunc metus."
+            },
+            {
+                title: "Prueba de titulo 4",
+                date: "Publicado el día " + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo non nibh laoreet euismod. Sed ultrices, quam ac lacinia finibus, nisl ipsum lobortis elit, vel ultrices odio eros quis arcu. Suspendisse non semper magna. Cras dapibus, sapien vel ornare gravida, dui magna cursus ex, eu tincidunt eros turpis in erat. Sed ac tortor a ante sollicitudin accumsan eu eget ligula. Suspendisse in ipsum imperdiet, rutrum sapien at, laoreet sem. Vivamus et nunc metus."
+            },
+            {
+                title: "Prueba de titulo 5",
+                date: "Publicado el día " + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo justo non nibh laoreet euismod. Sed ultrices, quam ac lacinia finibus, nisl ipsum lobortis elit, vel ultrices odio eros quis arcu. Suspendisse non semper magna. Cras dapibus, sapien vel ornare gravida, dui magna cursus ex, eu tincidunt eros turpis in erat. Sed ac tortor a ante sollicitudin accumsan eu eget ligula. Suspendisse in ipsum imperdiet, rutrum sapien at, laoreet sem. Vivamus et nunc metus."
+            },
+        ];
 
-    post.forEach(e => {
-        var plantilla = `
-            <article class="post">
-            <h2>${e.title}</h2>
-            <span class="date">${e.date}</span>
-            <p>${e.content}</p>
-            <a href="" class="button-more">Leer más</a>
-            </article>
-        `;
+        post.forEach(e => {
+            var plantilla = `
+                <article class="post">
+                <h2>${e.title}</h2>
+                <span class="date">${e.date}</span>
+                <p>${e.content}</p>
+                <a href="" class="button-more">Leer más</a>
+                </article>
+            `;
 
-        $("#posts").prepend(plantilla);
-    });
+            $("#posts").prepend(plantilla);
+        });
+    }
+
 
     //Selector de temas
     var theme = $("#theme");
@@ -88,5 +91,19 @@ $(document).ready(function() {
             localStorage.removeItem("form_name");
             location.reload();
         });
+    }
+
+    if (window.location.href.indexOf("about") > -1) {
+        //Acordeon
+        $("#acordeon").accordion();
+    }
+
+    if (window.location.href.indexOf("reloj") > -1) {
+        //Reloj
+        setInterval(function() {
+            var reloj = moment().format("h:mm:ss");
+            $("#reloj").html(reloj);
+        }, 1000);
+
     }
 });
